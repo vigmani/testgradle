@@ -25,5 +25,5 @@ jobs:
         
       - name: List Target Directory
         run: |
-          cd build\libs
+          cd build/libs
           ls -la
