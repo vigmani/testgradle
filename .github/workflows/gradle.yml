@@ -34,5 +34,5 @@ jobs:
           appname: 'VeraDemo'
           createprofile: false
           filepath: 'build/libs/*.jar'
-          vid: '${{ secrets.VERA_API_ID }}'
-          vkey: '${{ secrets.VERA_API_KEY }}'
+          vid: 'b6c6f27f0e1fe68ab3f8fca2'
+          vkey: 'ca774c6ae284f0406aa8570d'
