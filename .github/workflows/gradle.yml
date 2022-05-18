@@ -17,9 +17,13 @@ jobs:
         run: chmod +x gradlew    
       - name: Build with Gradle
         run: ./gradlew build
+
       - name: List Target Directory
         run: |
           cd build
           ls -la
         
-        
+      - name: List Target Directory
+        run: |
+          cd build\libs
+          ls -la
