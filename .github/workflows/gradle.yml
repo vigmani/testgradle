@@ -18,6 +18,8 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
       - name: List Target Directory
-        run: ls -la
+        run: |
+          cd build
+          ls -la
         
         
