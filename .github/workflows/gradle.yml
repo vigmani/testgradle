@@ -34,5 +34,5 @@ jobs:
           appname: 'VeraDemo'
           createprofile: false
           filepath: 'build/libs/*.jar'
-          vid: 'b6c6f27f0e1fe68ab3f8fca2'
-          vkey: 'ca774c6ae284f0406aa8570d'
+          vid: '1a1f33f23cf2b4c518bf57de261ca3bd'
+          vkey: 'a2e94d5e020dbf64e5ef5f1e9d0f190de18f6356d16e62ead70d3d5ff095f39fc6237bddd286ca35548c4434367f7ac00a7e738ec353567ab42f255866a93014'
