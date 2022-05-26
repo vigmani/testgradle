@@ -38,7 +38,7 @@ jobs:
     # the path to the SARIF file as an output of the transformation
             output-results-sarif: veracode-results.sarif
     # a path prefix conversion before publish in the SARIF file
-            source-base-path-1: 'build/libs/*.jar'
+            source-base-path-1: 'gradle-github-actions-example.jar'
     # The conversion rule of Veracode findings to GitHub level
             finding-rule-level: default is 4:3:0
 
