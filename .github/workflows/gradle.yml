@@ -28,6 +28,14 @@ jobs:
           cd build/libs
           ls -la
           
+      - run: java -jar pipeline-scan.jar --veracode_api_id "ab44f6d1c4d03efadb40c17ffc4aed95" --veracode_api_key "0b1ac08ef1e493f601065291c57c648aefbca329b74496f9056ca89ec9de533d51a9107ac8297e748daecb14f713a9d37fc71b152873dd57c67d9d8727892363" --fail_on_severity="Very High, High" --file veracode-pipeline-scan-results-to-sarif.zip
+        continue-on-error: true
+      - name: Convert pipeline scan output to SARIF format 
+        id: convert
+        uses: ./
+        with:
+          pipeline-results-json: results.json
+          
       - name: Veracode Static Analysis Pipeline Scan and SARIF import
         # You may pin to the exact commit or the version.
         # uses: veracode/veracode-pipeline-scan-results-to-sarif@c4e3ac33a116df4b7074d53747d8814e8fdf974b
