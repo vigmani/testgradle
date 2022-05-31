@@ -35,4 +35,4 @@ jobs:
       - name: Unzip the Pipeline Scanner
         run: unzip pipeline-scan-LATEST.zip
       - name: Run Pipeline Scanner
-        run: java -Dpipeline.debug=true -jar pipeline-scan.jar --veracode_api_id "${{secrets.VERACODE_API_ID}}" --veracode_api_key "${{secrets.VERACODE_API_KEY}}" --file "build/libs/gradle-github-actions-example.jar" --fail_on_severity="Very High, High"
+        run: java -Dpipeline.debug=true -jar pipeline-scan.jar --veracode_api_id "1a1f33f23cf2b4c518bf57de261ca3bd" --veracode_api_key "a2e94d5e020dbf64e5ef5f1e9d0f190de18f6356d16e62ead70d3d5ff095f39fc6237bddd286ca35548c4434367f7ac00a7e738ec353567ab42f255866a93014" --file "build/libs/gradle-github-actions-example.jar" --fail_on_severity="Very High, High"
