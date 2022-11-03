@@ -23,7 +23,7 @@ jobs:
           cd build
           ls -la
         
-      - name: List Target Directory
+      - name: List Target Dir
         run: |
           cd build/libs
           ls -la
